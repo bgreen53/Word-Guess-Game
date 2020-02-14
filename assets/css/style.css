@@ -1,0 +1,18 @@
+
+body{
+    background: url(../images/castle.jpg);
+    color: whitesmoke;
+
+}
+
+
+
+.disfont{
+    font-family: 'WaltographRegular';
+   font-weight: normal;
+   font-style: normal;
+   font-size: 60px;
+   color: #FF6AC1;
+   -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+}
