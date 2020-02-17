@@ -1,11 +1,18 @@
 
 body{
     background: url(../images/castle.jpg);
-    color: whitesmoke;
+    color: #FF6AC1;
 
 }
 
+header{
+    text-align: center;
+}
 
+img{
+    border: 2px solid whitesmoke;
+    max-width: 400px;
+}
 
 .disfont{
     font-family: 'WaltographRegular';
@@ -15,4 +22,14 @@ body{
    color: #FF6AC1;
    -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: white;
+
+}
+
+#gamedir{
+
+    font-size: 25px;
+    
+    -webkit-text-stroke-width: 1px;
+     -webkit-text-stroke-color: white;
+ 
 }
