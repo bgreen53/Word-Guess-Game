@@ -2,6 +2,7 @@
 body{
     background: url(../images/castle.jpg);
     color: #FF6AC1;
+    font-family: 'Kalam', cursive;
 
 }
 
@@ -26,10 +27,9 @@ img{
 }
 
 #gamedir{
-
-    font-size: 25px;
-    
-    -webkit-text-stroke-width: 1px;
-     -webkit-text-stroke-color: white;
+   
+    font-size: 28px;
+     -webkit-text-stroke-width: 1px;
+     -webkit-text-stroke-color: whitesmoke;
  
 }

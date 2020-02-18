@@ -8,7 +8,7 @@ window.onload = function () {
         "BELLE", "TIANA",
         "JASMINE", "MOANA",
         "POCAHONTAS", "MAUI",
-        "MULAN", "VANELLOPE VON SCHWEETZ"
+        "MULAN", "GENIE"
     ];
 
     var maxGuess = 10           
@@ -19,7 +19,7 @@ window.onload = function () {
     var blanksText = [];
     var numLetters = [];
     var blanks = 0;
-    
+    var pause = false;
     
 
 
@@ -28,19 +28,20 @@ window.onload = function () {
    function Game() {
         word = words[Math.floor(Math.random() * words.length)];
         
-        numLetters= word.split("")
+        
         console.log(numLetters)
-        blanks = numLetters.length;
+        blanks = word.length;
         
        
 
-        for (var i=0; i < blanks; i++){
+        for (var i=0; i < word.length; i++){
              if(word[i] === " "){
                 blanksText.push("   ")
             } else {
             blanksText.push("_")
             }
-
+        
+            console.log(word)
             };
         
         document.getElementById("blanks").innerHTML = blanksText.join(" ")
@@ -55,13 +56,10 @@ window.onload = function () {
     function pic() {
         
         if (word === words[0]) {
-            
             document.getElementById("image").src = "./assets/images/snow.jpg";
         }
         else if (word === words[1]){
-            
             document.getElementById("image").src = "./assets/images/anna.jpg";
-            console.log("word was Anna ")
         }
         else if (word === words[2]){
            
@@ -107,7 +105,7 @@ window.onload = function () {
             document.getElementById("image").src = "./assets/images/mulan.jpg";
         }
         else if (word === words[15]){
-            document.getElementById("image").src = "./assets/images/van.jpg";
+            document.getElementById("image").src = "./assets/images/genie.jpg";
         }
        
     }
@@ -115,6 +113,7 @@ window.onload = function () {
          maxGuess = 10;
          wrongGuess = [];
         blanksText = [];
+        pause = false
         Game()
     } 
 
@@ -125,7 +124,7 @@ window.onload = function () {
        
         //if the generated randomword is equal to the letter entered... then variable is true
         for (var i = 0; i < blanks; i++) {
-            if (numLetters[i] == letter) {
+            if (word[i] == letter) {
                 letterInWord = true;
             }
         }
@@ -133,7 +132,7 @@ window.onload = function () {
         if (letterInWord) {
             //check each letter to see if it matches word
             for (var i = 0; i < blanks; i++) {
-                if (numLetters[i] == letter) {
+                if (word[i] == letter) {
                     blanksText[i] = letter;
                 }
                
@@ -157,9 +156,10 @@ window.onload = function () {
     function complete() {
     
         console.log("wins:" + wins + "| losses:" + losses + "| guesses left:" + maxGuess)
-        if (numLetters.toString() == blanksText.toString()) {
+        if (word == blanksText.join("")) {
             wins++;
              pic()
+             pause = true
              setTimeout(reset,5000)
              
             //display wins on screen
@@ -168,6 +168,7 @@ window.onload = function () {
             //if LOST...then alert and reset new round
         } else if (maxGuess === 0) {
             losses++;
+            pause = true
              setTimeout(reset,5000)
             
              document.getElementById("image").src = "./assets/images/tryagain.png"
@@ -188,7 +189,7 @@ window.onload = function () {
 
    document.onkeyup = function (event) {
 
-    if(isAlpha(event.key)){
+    if(isAlpha(event.key) && !pause){
     var guesses = String.fromCharCode(event.keyCode).toUpperCase();
     //check to see if guess entered matches value of random word
     checkLetters(guesses);

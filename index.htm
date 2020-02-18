@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/waltograph" type="text/css"/>
     <link href="fontawesome-free-5.12.0-web/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
     <script src="assets/javascript/game.js"></script>
 
-    <title>Hangman</title>
+    <title>Word Guess</title>
 </head>
 
 <body>
@@ -22,20 +23,20 @@
     </header>
 <br>
 <br>
-    <div class= "container" id= "gamedir">
+    <div class= "container" >
     <div class="row">
         <div class="col-md-4" >
             <img id="image" src="assets/images/mickey.jpg">
         </div>
         <div class="col-md-4"></div>
-        <div class="col-md-4">
+        <div class="col-md-4" id= "gamedir">
         <div><p>Choose a letter to get started!</p></div>
         <div ></div>
         <div id="wins"><p>Wins:</p></div>
         <div id= "losses"><p>Losses:</p></div>
         <div><p>Current Word:</p></div>
         <div id="blanks"><!-- Dashes represinting number of letters --></div>
-        <div><p>Number of guess remaining:</p></div>
+        <div><p>Wrong guesses remaining:</p></div>
         <div id="numguess">10</div>
         <div><p>Letters already guessed:</p></div>
         <div id="letguess"></div>
