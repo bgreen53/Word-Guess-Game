@@ -16,9 +16,4 @@ Link to Live Game: https://bgreen53.github.io/Word-Guess-Game/
     -- HTML/CSS 
     -- GoogleFonts
     -- Bootstrap
-# Game Features:
- -- Start Screen
-  -- FUNCTIONALITY:
-    - Blank spaces displays length of random word for player to guess
-    - Scoreboard (wins,losses,guesses-remaining and wrong guesses below word) 
-     
+
