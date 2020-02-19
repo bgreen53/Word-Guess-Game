@@ -11,13 +11,13 @@ Link to Live Game: https://bgreen53.github.io/Word-Guess-Game/
  ####### Tips: 
    -- The [Guesses Remaining] countdown only goes down if you guess the wrong letter
    -- check to see the wrong guesses you already made at the bottom to narrow down your choices
-Tools/Languages Used:
+# Tools/Languages Used:
     -- Javascript 
     -- HTML/CSS 
     -- GoogleFonts
-Game Features:
-Start Screen
-  FUNCTIONALITY:
+# Game Features:
+ -- Start Screen
+  -- FUNCTIONALITY:
     - Blank spaces displays length of random word for player to guess
     - Scoreboard (wins,losses,guesses-remaining and wrong guesses below word) 
     
