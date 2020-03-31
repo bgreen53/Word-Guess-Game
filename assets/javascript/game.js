@@ -508,7 +508,6 @@ window.onload = function () {
 }
    
 
-    
 
 
 }// function end bracket

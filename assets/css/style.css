@@ -33,3 +33,7 @@ img{
      -webkit-text-stroke-color: whitesmoke;
  
 }
+
+#hide{
+    display: none;
+}
