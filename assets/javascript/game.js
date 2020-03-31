@@ -8,7 +8,8 @@ window.onload = function () {
         "BELLE", "TIANA",
         "JASMINE", "MOANA",
         "POCAHONTAS", "MAUI",
-        "MULAN", "GENIE"
+        "MULAN", "GENIE", 
+        "SNOW WHITE"
     ];
 
     var maxGuess = 10           
@@ -36,7 +37,7 @@ window.onload = function () {
 
         for (var i=0; i < word.length; i++){
              if(word[i] === " "){
-                blanksText.push("   ")
+                blanksText.push(" ")
             } else {
             blanksText.push("_")
             }
@@ -44,7 +45,7 @@ window.onload = function () {
             console.log(word)
             };
         
-        document.getElementById("blanks").innerHTML = blanksText.join(" ")
+        document.getElementById("blanks").innerHTML = blanksText.join("")
         document.getElementById("numguess").innerHTML= maxGuess
         document.getElementById("letguess").innerHTML= wrongGuess
 
@@ -92,7 +93,7 @@ window.onload = function () {
             demi.pause()
             ref.pause()
             likeme.pause()
-            
+            snow.pause()
             document.getElementById("image").src = "./assets/images/stitch.jpg";
         }
         else if (word === words[1]){
@@ -112,6 +113,7 @@ window.onload = function () {
             demi.pause()
             ref.pause()
             likeme.pause()
+            snow.pause()
             document.getElementById("image").src = "./assets/images/anna.jpg";
         }
         else if (word === words[2]){
@@ -131,6 +133,7 @@ window.onload = function () {
             demi.pause()
             ref.pause()
             likeme.pause()
+            snow.pause()
             document.getElementById("image").src = "./assets/images/cinder.jpg";
         }
         else if (word === words[3]){
@@ -150,6 +153,7 @@ window.onload = function () {
             demi.pause()
             ref.pause()
             likeme.pause()
+            snow.pause()
             document.getElementById("image").src = "./assets/images/elsa.jpg";
         }
         else if (word === words[4]){
@@ -169,6 +173,7 @@ window.onload = function () {
             demi.pause()
             ref.pause()
             likeme.pause()
+            snow.pause()
             document.getElementById("image").src = "./assets/images/aurora.jpg";
         }
         else if (word === words[5]){
@@ -188,6 +193,7 @@ window.onload = function () {
             demi.pause()
             ref.pause()
             likeme.pause()
+            snow.pause()
             document.getElementById("image").src = "./assets/images/rapunzel.jpg";
         }
         else if (word === words[6]){
@@ -207,6 +213,7 @@ window.onload = function () {
             demi.pause()
             ref.pause()
             likeme.pause()
+            snow.pause()
             document.getElementById("image").src = "./assets/images/ariel.jpg";
         }
         else if (word === words[7]){
@@ -226,6 +233,7 @@ window.onload = function () {
             demi.pause()
             ref.pause()
             likeme.pause()
+            snow.pause()
             document.getElementById("image").src = "./assets/images/baymax.jpg";
         }
         else if (word === words[8]){
@@ -245,6 +253,7 @@ window.onload = function () {
             demi.pause()
             ref.pause()
             likeme.pause()
+            snow.pause()
             document.getElementById("image").src = "./assets/images/belle.jpg";
         }
         else if (word === words[9]){
@@ -264,6 +273,7 @@ window.onload = function () {
             demi.pause()
             ref.pause()
             likeme.pause()
+            snow.pause()
             document.getElementById("image").src = "./assets/images/tiana.jpg";
         }
         else if (word === words[10]){
@@ -283,6 +293,7 @@ window.onload = function () {
             demi.pause()
             ref.pause()
             likeme.pause()
+            snow.pause()
             document.getElementById("image").src = "./assets/images/jasmine.jpg";
         }
         else if (word === words[11]){
@@ -302,6 +313,7 @@ window.onload = function () {
             demi.pause()
             ref.pause()
             likeme.pause()
+            snow.pause()
             document.getElementById("image").src = "./assets/images/moana.jpg";
         }
         else if (word === words[12]){
@@ -321,6 +333,7 @@ window.onload = function () {
             demi.pause()
             ref.pause()
             likeme.pause()
+            snow.pause()
             document.getElementById("image").src = "./assets/images/poca.jpg";
         }
         else if (word === words[13]){
@@ -340,6 +353,7 @@ window.onload = function () {
             demi.play()
             ref.pause()
             likeme.pause()
+            snow.pause()
             document.getElementById("image").src = "./assets/images/maui.jpg";
         }
         else if (word === words[14]){
@@ -359,6 +373,7 @@ window.onload = function () {
             demi.pause()
             ref.play()
             likeme.pause()
+            snow.pause()
             document.getElementById("image").src = "./assets/images/mulan.jpg";
         }
         else if (word === words[15]){
@@ -378,7 +393,28 @@ window.onload = function () {
             demi.pause()
             ref.pause()
             likeme.play()
+            snow.pause()
             document.getElementById("image").src = "./assets/images/genie.jpg";
+        }
+        else if (word === words[16]){
+            lilo.pause()
+            an.pause()
+            cin.pause()
+            letgo.pause()
+            sb.pause()
+            tangled.pause()
+            poyw.pause()
+            bay.pause()
+            beauty.pause()
+            deep.pause()
+            carpet.pause()
+            illgo.pause()
+            wincol.pause()
+            demi.pause()
+            ref.pause()
+            likeme.pause()
+            snow.play()
+            document.getElementById("image").src = "./assets/images/snow.jpg";
         }
        
     }
@@ -448,7 +484,7 @@ window.onload = function () {
             
         }
         //display losses on screen && guesses remaining countdown
-        document.getElementById("blanks").innerHTML = "  " + blanksText.join(" ");
+        document.getElementById("blanks").innerHTML = "  " + blanksText.join("");
         document.getElementById("numguess").innerHTML = " " + maxGuess;
 
     } 
