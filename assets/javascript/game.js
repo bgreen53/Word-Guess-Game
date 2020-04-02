@@ -517,7 +517,11 @@ $("#guess").on("click",function(event){
     var mobLtr = $("#hide").val()
     console.log(mobLtr)
     checkLetters(mobLtr)
+    complete();
+    console.log(mobLtr);
+    document.getElementById("letguess").innerHTML = "  " + wrongGuess.join(" ");
     $("#hide").val("");
+
 
 });
 
