@@ -1,5 +1,8 @@
 window.onload = function () {
 
+    var hide = document.getElementById("hide")
+    hide.focus()
+
     var words = [
         "STITCH", "ANNA",
         "CINDERELLA", "ELSA",
