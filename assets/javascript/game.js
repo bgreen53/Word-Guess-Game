@@ -510,6 +510,15 @@ window.onload = function () {
 }
 }
    
+document.getElementById("guess").onclick = function(){
+    
+   
+
+    var mobLtr = document.getElementById("hide").value 
+    console.log(mobLtr)
+    checkLetters(mobLtr)
+    document.getElementById("hide").reset();
+} 
 
 
 

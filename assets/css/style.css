@@ -38,9 +38,16 @@ img{
     display: none;
 }
 
+#guess{
+    display: none;
+}
 @media only screen and (max-width: 640px) {
 
     #hide{
+        display: initial;
+    }
+
+    #guess{
         display: initial;
     }
 
