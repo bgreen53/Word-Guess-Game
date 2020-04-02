@@ -496,16 +496,16 @@ window.onload = function () {
 
    
 //allow user guess and check against word
-   document.onkeyup = function (event) {
+//    document.onkeyup = function (event) {
 
-    if(isAlpha(event.key) && !pause){
-    var guesses = String.fromCharCode(event.keyCode).toUpperCase();
-    checkLetters(guesses);
-    complete();
-    console.log(guesses);
-    document.getElementById("letguess").innerHTML = "  " + wrongGuess.join(" ");
-}
-}
+//     if(isAlpha(event.key) && !pause){
+//     var guesses = String.fromCharCode(event.keyCode).toUpperCase();
+//     checkLetters(guesses);
+//     complete();
+//     console.log(guesses);
+//     document.getElementById("letguess").innerHTML = "  " + wrongGuess.join(" ");
+// }
+// }
    
 
 $("#guess").on("click",function(event){
@@ -516,9 +516,10 @@ $("#guess").on("click",function(event){
     checkLetters(mobLtr)
     complete();
     console.log(mobLtr);
-    $("#letguess").append("  " + wrongGuess.join(" "))
+    document.getElementById("letguess").innerHTML = "  " + wrongGuess.join(" ");
     $("#hide").val("");
     $("#gamedir").hide()
+    console.log(wrongGuess)
 
 
 });
