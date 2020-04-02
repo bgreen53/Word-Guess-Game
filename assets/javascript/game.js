@@ -511,9 +511,9 @@ window.onload = function () {
 }
    
 
-$("#guess").on("click",function(){
+$("#guess").on("click",function(event){
     
-    preventDefault()
+    event.preventDefault()
     var mobLtr = $("#hide").val()
     console.log(mobLtr)
     checkLetters(mobLtr)
