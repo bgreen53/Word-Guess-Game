@@ -1,8 +1,5 @@
 window.onload = function () {
 
-    var hide = document.getElementById("hide")
-    hide.focus()
-
     var words = [
         "STITCH", "ANNA",
         "CINDERELLA", "ELSA",
@@ -519,8 +516,9 @@ $("#guess").on("click",function(event){
     checkLetters(mobLtr)
     complete();
     console.log(mobLtr);
-    document.getElementById("letguess").innerHTML = "  " + wrongGuess.join(" ");
+    $("#letguess").append("  " + wrongGuess.join(" "))
     $("#hide").val("");
+    $("#gamedir").hide()
 
 
 });

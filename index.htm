@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/waltograph" type="text/css"/>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/waltograph" type="text/css" />
     <link href="fontawesome-free-5.12.0-web/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -19,96 +19,113 @@
 
 <body>
     <header>
-        <h1 class= "disfont">Word Guess Game</h1>
-        <h2 class= "disfont">Disney Edition</h2>
+        <h1 class="disfont">Word Guess Game</h1>
+        <h2 class="disfont">Disney Edition</h2>
     </header>
-<br>
-<br>
-    <div class= "container" >
-    <div class="row">
-         <div class="col-md-4" id= "gamedir">
-        <div><p>Choose a letter to get started!</p></div>
-        <div ></div>
-        <div id="wins"><p>Wins:</p></div>
-        <div id= "losses"><p>Losses:</p></div>
-        <div><p>Current Word:</p></div>
-        <div id="blanks"><!-- Dashes represinting number of letters --></div>
-        <div><p>Wrong guesses remaining:</p></div>
-        <div id="numguess">10</div>
-        <div><p>Letters already guessed:</p></div>
-        <div id="letguess"></div>
-        <form>
-        <input id="hide">
-        <button type="submit" id="guess">Guess</button>
-    </form>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4" id="gamedir">
+                <div>
+                    <p>Choose a letter to get started!</p>
+                </div>
+
+            </div>
+            <div id="game">
+                
+                <div id="wins">
+                    <p>Wins:</p>
+                </div>
+                <div id="losses">
+                    <p>Losses:</p>
+                </div>
+                <div id="current">
+                    <p>Current Word:</p>
+                </div>
+                <div id="blanks">
+                    <!-- Dashes represinting number of letters -->
+                </div>
+                <div id="wrong">
+                    <p>Wrong guesses remaining:</p>
+                </div>
+                <div id="numguess">10</div>
+                <div>
+                    <p>Letters already guessed:</p>
+                </div>
+                <div id="letguess"></div>
+                <form>
+                    <input id="hide">
+                    <button type="submit" id="guess">Guess</button>
+                </form>
+            </div>
+            <div class="col-md-4"> </div>
+
+            <div class="col-md-4" id="imgDiv">
+                <img id="image" src="assets/images/mickey.jpg">
+
+            </div>
         </div>
-        <div class="col-md-4">  </div>
-        
-        <div class="col-md-4" >
-            <img id="image" src="assets/images/mickey.jpg">
-        </div>
-        
-    </div>
+
     </div>
     <div>
         <!--arthur-->
-        <audio id= "lilo" >
-            <source  src="./assets/mp3/stitch.mp3" type="audio/mp3">
+        <audio id="lilo">
+            <source src="./assets/mp3/stitch.mp3" type="audio/mp3">
         </audio>
-        <audio id= "an" >
-            <source  src="./assets/mp3/first.mp3" type="audio/mp3">
+        <audio id="an">
+            <source src="./assets/mp3/first.mp3" type="audio/mp3">
         </audio>
         <audio id="cin">
-            <source  src="./assets/mp3/cinder.mp3" type="audio/mp3">
+            <source src="./assets/mp3/cinder.mp3" type="audio/mp3">
         </audio>
         <audio id="letgo">
-            <source  src="./assets/mp3/elsa.mp3" type="audio/mp3">
+            <source src="./assets/mp3/elsa.mp3" type="audio/mp3">
         </audio>
         <audio id="sb">
-            <source  src="./assets/mp3/sleep.mp3" type="audio/mp3">
+            <source src="./assets/mp3/sleep.mp3" type="audio/mp3">
         </audio>
         <audio id="rap">
-            <source  src="./assets/mp3/tangled.mp3" type="audio/mp3">
+            <source src="./assets/mp3/tangled.mp3" type="audio/mp3">
         </audio>
         <audio id="part">
-            <source  src="./assets/mp3/part.mp3" type="audio/mp3">
+            <source src="./assets/mp3/part.mp3" type="audio/mp3">
         </audio>
         <audio id="bay">
-            <source  src="./assets/mp3/bay.mp3" type="audio/mp3">
+            <source src="./assets/mp3/bay.mp3" type="audio/mp3">
         </audio>
         <audio id="bnb">
-            <source  src="./assets/mp3/bnb.mp3" type="audio/mp3">
+            <source src="./assets/mp3/bnb.mp3" type="audio/mp3">
         </audio>
         <audio id="dig">
-            <source  src="./assets/mp3/dig.mp3" type="audio/mp3">
+            <source src="./assets/mp3/dig.mp3" type="audio/mp3">
         </audio>
         <audio id="newworld">
-            <source  src="./assets/mp3/newworld.mp3" type="audio/mp3">
+            <source src="./assets/mp3/newworld.mp3" type="audio/mp3">
         </audio>
         <audio id="far">
-            <source  src="./assets/mp3/howfar.mp3" type="audio/mp3">
+            <source src="./assets/mp3/howfar.mp3" type="audio/mp3">
         </audio>
         <audio id="wind">
-            <source  src="./assets/mp3/wind.mp3" type="audio/mp3">
+            <source src="./assets/mp3/wind.mp3" type="audio/mp3">
         </audio>
         <audio id="welcome">
-            <source  src="./assets/mp3/welcome.mp3" type="audio/mp3">
+            <source src="./assets/mp3/welcome.mp3" type="audio/mp3">
         </audio>
         <audio id="reflect">
-            <source  src="./assets/mp3/reflect.mp3" type="audio/mp3">
+            <source src="./assets/mp3/reflect.mp3" type="audio/mp3">
         </audio>
         <audio id="friend">
-            <source  src="./assets/mp3/friend.mp3" type="audio/mp3">
+            <source src="./assets/mp3/friend.mp3" type="audio/mp3">
         </audio>
         <audio id="snow">
-            <source  src="./assets/mp3/snow.mp3" type="audio/mp3">
+            <source src="./assets/mp3/snow.mp3" type="audio/mp3">
         </audio>
-        
+
     </div>
 
-    
+
 
 </body>
 
 </html>
-

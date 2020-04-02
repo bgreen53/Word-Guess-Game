@@ -34,6 +34,12 @@ img{
  
 }
 
+#game{
+    font-size: 28px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: whitesmoke;
+}
+
 #hide{
     display: none;
 }
@@ -43,16 +49,46 @@ img{
 }
 @media only screen and (max-width: 640px) {
 
+    form{
+        padding-left: 15px;
+    }
+
     #hide{
         display: initial;
+        
     }
 
     #guess{
         display: initial;
+        background-color: #FF6AC1;
     }
 
-    #letguess{
-        display: none;
+    #wins{
+        float: left;
+        padding-right: 10px;
     }
+
+    #game{
+        font-size: 18px;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: whitesmoke;
+    }
+
+    .disfont{
+        font-family: 'WaltographRegular';
+       font-weight: normal;
+       font-style: normal;
+       font-size: 30px;
+       color: #FF6AC1;
+       -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: white;
+    
+    }
+
+    #imgDiv {
+        float: left;
+    }
+
+   
 }
 
