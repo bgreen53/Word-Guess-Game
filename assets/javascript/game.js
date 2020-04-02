@@ -513,7 +513,7 @@ window.onload = function () {
 
 $("#guess").on("click",function(){
     
-    
+    preventDefault()
     var mobLtr = $("#hide").val()
     console.log(mobLtr)
     checkLetters(mobLtr)
