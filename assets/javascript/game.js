@@ -495,7 +495,7 @@ window.onload = function () {
        
 
    
-allow user guess and check against word
+//allow user guess and check against word
    document.onkeyup = function (event) {
 
     if(isAlpha(event.key) && !pause){
